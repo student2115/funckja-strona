@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='landing.css')}}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Równania kwadratowe</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('landing_page') }}">Strona główna</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('about_us') }}">O projekcie</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Tutaj coś wstawić</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#">Tutaj coś wstawić</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="main_container">
+  <div class="main_header">
+    </div>
+    <div class="simple_paragraph">
+      <p>Ta strona pomoże Ci nauczyć się rozwiązywania równań kwadratowych pozdro B)</p>
+  </div>
+    <div class="definition">
+        <p class="definition_header">Definicja</p>
+        <p class="definition_text">Liczbę rozwiązań równania kwadratowego określa się w zależności od wartości delty (ozn. Δ).
+           Mając równanie kwadratowe w postaci $${ax^2 + bx + c = 0,}$$ określa się wartość parametru Δ korzystając ze wzoru: $$\Delta = b^2 - 4ac.$$
+           Pierwiastki (rozwiązania) równania w zależności od wartości Δ. Jeżeli Δ > 0, to równanie kwadratowe ma dwa miejsca zerowe: $${ x = \frac {-b \pm \sqrt {Δ}}{2a}. }$$
+           Jeżeli Δ = 0, to równanie kwadratowe ma dokładnie jedno rozwiązanie: $${ x_1 = x_2 = -\frac{b}{2a}. }$$
+           Jeżeli Δ < 0, to równanie kwadratowe nie ma rozwiązań.
+          </p>
+    </div>
+    
+</div>
+</body>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</html>

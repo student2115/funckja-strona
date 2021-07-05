@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about_us.css')}}">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Równania kwadratowe</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('landing_page') }}">Strona główna</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('about_us') }}">O projekcie</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Tutaj coś wstawić</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#">Tutaj coś wstawić</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main_container">
+  <div class="main_header">
+      <p><strong>O projekcie:</strong></p>
+  </div>
+  <div class="about_project">
+    <p class="about_project_text">Strona uczy rozwiązywania równań kwadratowych z zakresu szkoły średniej. Projekt stworzony na zajecia z Technologii Informacyjnych.</p>
+  </div>
+  <div class="authors">
+    <p class="authors_header"><strong>Autorzy:</strong></p>
+    <p class="authors_text">Krzysztof Gąciarz</p>
+    <p class="authors_text">Michał Barcikowski</p>
+    <p class="authors_text">Bartłomiej Gintowt</p>
+    <p class="authors_text">Tymon Jastrzębski</p>
+  </div>
+  </div>
+</body>
+</html>

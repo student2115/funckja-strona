@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Raleway;
+    src: ('raleway.ttf');
+}
+
+.main_container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.main_header{
+  color: "black";
+  font-family: Raleway;
+  font-size: 35px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+}
+
+.definition{
+  display: flex;
+  margin: 0 auto;
+  background-color: #FFDFA0;
+  flex-flow: column;
+  padding: 30px 0;
+  border-radius: 25px;
+  margin-top: 40px;
+
+}
+
+.definition_header{
+  color: #1B75BC;
+  font-family: Raleway;
+  font-size: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.definition_text{
+  font-family: Raleway;
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.simple_paragraph{
+  font-family: Raleway;
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+
+.formula{
+  background-color: #B9F893;
+  padding: 30px 0;
+  margin-top: 40px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+.formula p{
+  color: #1B75BC;
+  font-family: Raleway;
+  font-size: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.theorem{
+  display: flex;
+  margin: 0 auto;
+  background-color: #93F8E9;
+  flex-flow: column;
+  padding: 30px 0;
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+.theorem_text{
+  font-family: Raleway;
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.theorem_header{
+  color: #1B75BC;
+  font-family: Raleway;
+  font-size: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
